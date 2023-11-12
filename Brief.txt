@@ -21,23 +21,23 @@ Donato indumentaria es una tienda de ropa masculina que se enfoca en ofrecer una
 ●	Sitio web
 ●	Redes sociales: instagram
 ●	Whatsapp
-LABORATORIO IV
-GRUPO: BrainStorm2
+
 6.	Conceptos tecnológicos (base de datos, lenguaje (de programación) frameworks, código html, css).
 Tecnologías front-end:
 ●	Framework: Express y Api de MercadoPago
 ●	HTML
 ●	CSS
 ●	JavaScript
-Tecnologías back-end:
-7.	JavaScript (NodeJS,) 
 
-8.	Requerimientos Funcionales:
+Tecnologías back-end:
+JavaScript (NodeJS,) 
+
+7.	Requerimientos Funcionales:
 ●	Catálogo de productos
 ●	Carrito de compra
 ●	Redirección a redes sociales
 
-9.	Cronograma estimado
+8.	Cronograma estimado
 ●	Definición de objetivos: 5 días
 ●	Contenido y diagramas de navegación: 3 - 5 días
 ●	Wireframes: 3 a 10 días
