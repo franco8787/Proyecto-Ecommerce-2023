@@ -1,0 +1,355 @@
+/* prducts style */
+.card-products-container {
+    margin: 5vh auto;
+}
+
+.card-products {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-products img {
+    margin-top: 2.5rem;
+    width: 15.625rem;
+    height: 15.625rem;
+}
+
+.card-products button {
+    border: none;
+    outline: 0;
+    padding: 0.625rem;
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font: bolder;
+    font-size: 2rem;
+}
+
+.card-products button:hover {
+    opacity: 0.7;
+}
+
+/* cart style */
+.cart-btn {
+    position: fixed;
+    top: calc(90vh - 0.5cm);
+    right: 40px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cart-btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.cart-counter {
+    display: none;
+    position: fixed;
+    top: 89vh;
+    right: 27px;
+    color: #fff;
+    text-align: center;
+    background-color: #ed3434;
+    padding: 4px;
+    border-radius: 50%;
+    height: 17px;
+    width: 17px;
+    font-size: 15px;
+}
+
+/* modal style */
+.modal-overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.modal-container {
+    display: none;
+    background-color: #c0c0c0;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 40px);
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+    min-height: 100vh;
+    z-index: 1;
+    max-height: 80vh;
+    overflow-y: auto;
+    border: 2px solid #000;
+    border-radius: 8px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+/* Añadir box-sizing a los elementos internos */
+.modal-container * {
+    box-sizing: content-box;
+}
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-close {
+    float: right;
+    cursor: pointer;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* modal body */
+.modal-body {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.modal-body img {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.product-img {
+    height: 80px;
+    margin-right: 20px;
+    width: 80px;
+}
+
+.product-info {
+    flex: 1;
+    text-align: left;
+}
+
+.product-info h4 {
+    margin-top: 35px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 4em;
+}
+
+.quantity-btn-decrese,
+.quantity-btn-increse {
+    color: #333333;
+    cursor: pointer;
+    font-size: 16px;
+    width: 28px;
+    font-weight: bold;
+}
+
+.quantity-input {
+    color: #333333;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    width: 50px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+    .product-img {
+        display: none;
+    }
+    .modal-body {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.delete-product {
+    margin-top: 20px;
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.total-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+#button-checkout {
+    z-index: 10;
+}
+
+body {
+    background-color: #363434;
+    /* Fondo gris claro */
+    margin: 0;
+    /* Elimina el margen predeterminado del body */
+    font-family: Arial, sans-serif;
+    /* Fuente predeterminada */
+}
+
+header {
+    background-color: #555151;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 100px;
+}
+
+section {
+    margin: 20px;
+    /* Agrega margen a las secciones para separar del borde */
+    background-color: #ffffff;
+    /* Fondo blanco para las secciones */
+    padding: 20px;
+    /* Espaciado interno */
+    border-radius: 8px;
+    /* Bordes redondeados */
+}
+
+.card-products-container {
+    border: 2px solid #000;
+    /* Borde negro */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Espaciado interno */
+    /* Otros estilos para la sección de productos */
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+#contact-form {
+    margin-bottom: 20px;
+    /* Ajusta el espacio entre #contact-form y #contact-info según tus preferencias */
+    background-color: #fff;
+    padding: 30px; /* Aumenté el padding para un formulario más espaciado */
+    border: 2px solid #000;
+    border-radius: 8px;
+    max-width: 450px; /* Aumenté el ancho máximo del formulario */
+}
+
+#contact-form label {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900; /* Hace que el texto sea más negrito */
+    transition: background-color 0.3s ease;
+    padding: 12px 16px; /* Ajusta el relleno para hacer el botón un poco más grande */
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+#contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    max-width: 400px;
+}
+
+.footer-container {
+    margin-top: 20px;
+    /* Agrega margen superior para separar de la sección anterior */
+}
+
+footer {
+    padding: 5px;
+    /* Espaciado interno en el footer */
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff00;
+    /* Puedes ajustar el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto a blanco */
+}

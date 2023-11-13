@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
+    <title>Donatto</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><img src="/img/logo/logoShop2.png" alt="Logo de Donatto" width="200" height="100"></h1>
+    </header>
+    <section id="cta">
+        <h2>¡Bienvenido a Donatto - Donde el Estilo se Encuentra con la Diversión!</h2>
+        <p>Estamos emocionados de tenerte aquí, explorando nuestra increíble colección de moda masculina. Prepárate para descubrir tendencias frescas, comodidad insuperable y un toque de diversión en cada prenda ¡Compra con confianza y estilo! 🎉</p>
+    </section>
+
+    <!-- Sección de Todos los Productos -->
+    <section>
+        <h1>Todos los Productos</h1>
+        <div class="card-products-container">
+            <div class="card-products" id="shopContent"></div>
+        </div>
+    </section>
+
+    <!-- Cart button and counter -->
+    <div class="cart-btn" id="cart-btn">🛒</div>
+    <span class="cart-counter" id="cart-counter">0</span>
+
+    <!-- Modal overlay and container -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-container" id="modal-container"></div>
+
+    <div class="contact-container">
+        <div id="contact-form">
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+                <button id="submit">Enviar</button>
+            </form>
+        </div>
+        <div id="contact-info">
+            <h2>Información de Contacto</h2>
+            <p>Dirección: San Martin 1333, San Rafael, Mendoza</p>
+            <p>Teléfono: (2604) 688151</p>
+            <p>Correo Electrónico: fernandojuliodariogarcia@gmail.com</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/donatto.indumentaria" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <footer id="copyright">
+            <p>Derechos de autor © 2023 Donatto. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript files -->
+    <script>
+        window.addEventListener('scroll', function() {
+            var footer = document.getElementById('copyright');
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var documentHeight = document.body.scrollHeight;
+
+            if (scrollPosition >= documentHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+    </script>
+    <script src="../js/products.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+</body>
+</html>
